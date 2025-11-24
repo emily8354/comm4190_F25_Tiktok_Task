@@ -22,7 +22,7 @@ This TikTok video analyzes why Kayla Nicole's Halloween costume response to Tayl
 
 ## Final LLM Prompt and Inter-Rater Reliability Scores
 
-### Final LLM Prompt - TODO
+### Final LLM Prompt 
 
 ```
 You are a research assistant coding TikTok comments about Kayla Nicole and Taylor Swift.
@@ -72,23 +72,27 @@ CRITICAL RULES:
 3. When uncertain, ask: "Is this comment taking a side?" If NO → Code 0,0
 ```
 
-### Inter-Rater Reliability Scores - TODO
+### Inter-Rater Reliability Scores - 
 
 **Final Scores:**
 - **Concept 1 (Pro-Kayla/Anti-Taylor):** Krippendorff's α = 0.218*
 - **Concept 2 (Pro-Taylor/Anti-Kayla):** Krippendorff's α = **0.515**
 
+- The inter-rater reliability for Concept 1 is relatively low (α = 0.218), indicating that the LLM and human coder disagreed frequently when identifying pro-Kayla or anti-Taylor comments. This makes sense given the subtle, implicit ways that users criticize Taylor Swift or support Kayla Nicole, especially through sarcasm, references to power dynamics, or indirect commentary about billionaires. These expressions are harder for an LLM to detect consistently without explicit keywords.
+
+Concept 2 achieved a moderate reliability score (α = 0.515), suggesting that pro-Taylor or anti-Kayla comments were more straightforward for both human and AI coders to identify. These comments often use more direct, unambiguous language such as “desperate ex vibes,” “I’m a Swiftie,” or explicit defense of Taylor’s lyrics. This clarity likely enhanced agreement between coders, showing that comments supporting Taylor tend to be more explicit and less reliant on cultural or political subtext.
+
 ## Reflection on Prompting Strategy Evolution
 
-Our first prompt focused more on explicit support and opposition, requiring clear statements like "I support Kayla" or "Taylor is wrong." This approach achieved only moderate reliability because it missed the nuanced, indirect ways people express opinions on social media.
+Our initial prompting strategy was broad and relied primarily on explicit declarations of support or criticism. For example, the early version of the prompt looked for comments that clearly stated “I support Kayla” or “Taylor is wrong,” which resulted in ambiguous or indirect comments being coded inconsistently. This approach did not account for the nuanced, indirect, and often sarcastic style of TikTok discourse, where users frequently express opinions through implication, cultural references, or critiques of power and privilege without naming either woman directly.
 
-We then...
-
-We learned that it is important to be specific and that having examples for the LLM are very helpful. 
+We improved the prompt by adding concrete examples, clarifying ambiguous cases, and specifying how to treat generic reactions, emojis, or comments that praise or critique the creator rather than Kayla or Taylor. Most importantly, we built in definitions for implicit criticism, such as calling Taylor a “billionaire bully” or framing Kayla as an underdog. These revisions significantly improved the LLM’s ability to interpret the subtle, coded language used in comment sections discussing celebrity power dynamics. Through this iterative process, we learned that specificity, detailed examples, and rule-based guidance are essential for achieving better alignment between human and machine coders—especially when analyzing culturally loaded and emotionally charged online discourse. 
 
 ---
 
 ## Charts and Graphs - TODO
+<img width="1180" height="780" alt="cc5b0e1e-fd46-4ad9-b231-e2a43d091512" src="https://github.com/user-attachments/assets/d7cfe5ea-d793-4e7d-8405-d86cecae5b54" />
+
 
 ---
 
