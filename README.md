@@ -18,4 +18,4 @@ This project analyzes public opinion in TikTok comments regarding the debate bet
 ### Main Files
 - `report.md` - Complete report with all sections
 - `01_tiktok_task.ipynb` - Notebook
-- `final_coded_dataset.csv` - Final coded dataset
+- `final_coded_data.csv` - Final coded dataset
