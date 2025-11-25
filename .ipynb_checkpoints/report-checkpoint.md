@@ -90,17 +90,17 @@ We then realized that the LLM needed examples for how to code the comments. We e
 
 ## Charts and Graphs
 
-![](attachment:aaf05516-74c4-4096-9258-6183e5712d52.png)
+![](download.png)
 
-![](attachment:193fe562-aa91-4e78-8932-e98fdb25aded.png)
+![](download-1.png)
 
-![](attachment:9829ae47-d05d-4d3d-ba6d-52b296c1b6d8.png)
+![](download-2.png)
 
-![](attachment:1399fb6b-7f92-4c15-bc91-311a125bdf9c.png)
+![](download-3.png)
 
-![](attachment:8dfe8038-9be9-42b1-b25c-576697ab548a.png)
+![](download-4.png)
 
-![](attachment:a7e1f170-83ec-4e2a-9b43-c5051fc56390.png)
+![](download-5.png)
 
 ---
 
