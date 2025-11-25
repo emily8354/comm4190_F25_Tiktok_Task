@@ -22,7 +22,7 @@ This TikTok video analyzes why Kayla Nicole's Halloween costume response to Tayl
 
 ## Final LLM Prompt and Inter-Rater Reliability Scores
 
-### Final LLM Prompt - TODO
+### Final LLM Prompt
 
 ```
 You are a research assistant coding TikTok comments about Kayla Nicole and Taylor Swift.
@@ -72,23 +72,35 @@ CRITICAL RULES:
 3. When uncertain, ask: "Is this comment taking a side?" If NO → Code 0,0
 ```
 
-### Inter-Rater Reliability Scores - TODO
+### Inter-Rater Reliability Scores
 
 **Final Scores:**
-- **Concept 1 (Pro-Kayla/Anti-Taylor):** Krippendorff's α = 0.218*
-- **Concept 2 (Pro-Taylor/Anti-Kayla):** Krippendorff's α = **0.515**
+- **Concept 1 (Pro-Kayla/Anti-Taylor):** Krippendorff's α = 0.482
+- **Concept 2 (Pro-Taylor/Anti-Kayla):** Krippendorff's α = 0.398
+
+Note that we tried many times but was not able to get above the threshold sorry!
 
 ## Reflection on Prompting Strategy Evolution
 
 Our first prompt focused more on explicit support and opposition, requiring clear statements like "I support Kayla" or "Taylor is wrong." This approach achieved only moderate reliability because it missed the nuanced, indirect ways people express opinions on social media.
 
-We then...
-
-We learned that it is important to be specific and that having examples for the LLM are very helpful. 
+We then realized that the LLM needed examples for how to code the comments. We explicitly states what should and should not be coded as 0/1, providing guardrails against over-coding. We learned that it is important to be specific and that having examples for the LLM are very helpful. 
 
 ---
 
-## Charts and Graphs - TODO
+## Charts and Graphs
+
+![](attachment:aaf05516-74c4-4096-9258-6183e5712d52.png)
+
+![](attachment:193fe562-aa91-4e78-8932-e98fdb25aded.png)
+
+![](attachment:9829ae47-d05d-4d3d-ba6d-52b296c1b6d8.png)
+
+![](attachment:1399fb6b-7f92-4c15-bc91-311a125bdf9c.png)
+
+![](attachment:8dfe8038-9be9-42b1-b25c-576697ab548a.png)
+
+![](attachment:a7e1f170-83ec-4e2a-9b43-c5051fc56390.png)
 
 ---
 
